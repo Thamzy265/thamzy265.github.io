@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <nav class="bg-white">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
+              <div class="flex-shrink-0 flex items-center">
+                <a href="">
+                    <img class="block lg:hidden h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
+                  <img class="hidden lg:block h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
+                </a>
+                
+              </div>
+              <div class="hidden sm:block sm:ml-6 mt-5">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="about.html" class="bg-gray-300 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">About</a>
+      
+                  <a href="about.html#team" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+      
+                  <a href="#" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products </a>
+      
+                  <a href="contact.html" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="bg-cover bg-center h-96 flex items-center" style="background-image: url(./img/pexels-pixabay-371917.jpg)">
+        <div class="max-w-7xl mx-20 px-2 sm:px-6 md:px-[5rem] lg:px-8 text-white">
+            <div class="md:w-96 ">
+                <h2 class="font-bold text-[2.5rem]">NYIKA SOLAR TECHNOLOGIES LIMITED</h2>
+                <h3 class="py-2">Manufacturers and distributors of solar water heaters and solar power products throughout Southern and Eastern Africa.</h3>
+            </div>
+        </div>
+      </div>
+
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 md:px-[5rem] lg:px-8 text-center mt-[4rem] mb-[5rem]">
+        <h4 class="text-[1.8rem] font-bold"><span class="text-blue-600">.</span><span class="text-gray-600">We Provide Solar</span> <span class="text-blue-500">Sustainable Products</span></h4>
+        <p class="py-5 text-gray-500 font-medium">Manufacturers and distributors of solar water heaters and solar power products throughout Southern and Eastern Africa.</p>
+   
+        <div class="flex justify-around columns-3 mt-5">
+
+            <div class="flex flex-col justify-center">
+                <div class="icon fill-blue-400 hover:fill-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="70pt" viewBox="0 0 480 480" width="70pt">
+                        <path d="m439.824219 238.398438c-.757813-3.722657-4.03125-6.394532-7.832031-6.398438h-384c-3.796876.003906-7.070313 2.675781-7.832032 6.398438l-40 192c-.480468 2.355468.125 4.796874 1.640625 6.660156 1.519531 1.859375 3.792969 2.941406 6.191407 2.941406h184v40h96v-40h184c2.402343 0 4.675781-1.082031 6.195312-2.941406 1.515625-1.863282 2.117188-4.304688 1.636719-6.660156zm-117.804688 121.601562-4-48h58.910157l6 48zm62.910157 16 6 48h-63.574219l-4-48zm-287.871094-16 6-48h58.910156l-4 48zm59.574218 16-4 48h-63.574218l6-48zm-75.703124-16h-49.734376l10.007813-48h45.757813zm219.703124-64h-52.640624v-48h48.640624zm12.046876-48h56.25l6 48h-58.25zm-80.6875 48h-52.636719l4-48h48.636719zm-68.6875 0h-58.246094l6-48h56.246094zm14.714843 16h53.972657v48h-57.972657zm69.972657 0h53.976562l4 48h-57.976562zm145.066406 0h45.757812l9.976563 48h-49.734375zm42.398437-16h-44.398437l-6-48h40.429687zm-380.960937-48h40.433594l-6 48h-44.433594zm-26.664063 128h51.097657l-6 48h-55.105469zm140.847657 48 4-48h59.3125v48zm103.3125 40h-64v-24h64zm-24-40v-48h59.3125l4 48zm159.066406 0-6-48h51.09375l10.007812 48zm0 0"></path>
+                        <path d="m239.992188 176c35.347656 0 64-28.652344 64-64s-28.652344-64-64-64c-35.34375 0-64 28.652344-64 64 .042968 35.328125 28.671874 63.960938 64 64zm0-112c26.511718 0 48 21.492188 48 48s-21.488282 48-48 48c-26.507813 0-48-21.492188-48-48 .027343-26.5 21.503906-47.972656 48-48zm0 0"></path><path d="m231.992188 0h16v32h-16zm0 0"></path><path d="m155.148438 38.457031 11.3125-11.3125 22.628906 22.625-11.316406 11.316407zm0 0"></path><path d="m127.992188 104h32v16h-32zm0 0"></path><path d="m155.144531 185.535156 22.628907-22.625 11.3125 11.3125-22.628907 22.628906zm0 0"></path><path d="m231.992188 192h16v32h-16zm0 0"></path><path d="m290.90625 174.230469 11.3125-11.3125 22.628906 22.625-11.3125 11.316406zm0 0"></path><path d="m319.992188 104h32v16h-32zm0 0"></path><path d="m290.910156 49.769531 22.628906-22.628906 11.3125 11.3125-22.628906 22.628906zm0 0"></path>
+                    </svg>
+                </div>
+                <p class="pt-3 font-bold text-gray-500">water Heaters</p>
+            </div>
+        
+            <div class="flex flex-col justify-center">
+                <div class="icon fill-blue-400 hover:fill-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="70pt" viewBox="0 -12 479.6 479" width="70pt">
+                        <path d="m362.695312 160.300781 40-136h-144.527343l-77.136719 240h113.746094l-27.304688 191.144531 212.128906-295.144531zm-49.472656 88h-110.253906l66.863281-208h111.472657l-40 136h107.09375l-155.871094 216.855469zm0 0"></path><path d="m208 96.300781c5.042969 0 10.082031.335938 15.078125 1.007813l2.121094-15.855469c-5.699219-.765625-11.445313-1.148437-17.199219-1.152344-54.421875 0-102.894531 34.414063-120.839844 85.792969-17.945312 51.378906-1.4375 108.488281 41.152344 142.371094 42.585938 33.882812 101.945312 37.132812 147.976562 8.097656l-8.5625-13.511719c-40.28125 25.386719-92.210937 22.53125-129.464843-7.121093-37.253907-29.652344-51.6875-79.617188-35.984375-124.566407s58.109375-75.058593 105.722656-75.0625zm0 0"></path><path d="m200 .300781h16v64h-16zm0 0"></path>
+                        <path d="m97.070312 32.160156 13.855469-8 32.003907 55.425782-13.855469 8zm0 0"></path>
+                        <path d="m23.863281 111.230469 8-13.855469 55.425781 32-8 13.859375zm0 0"></path>
+                        <path d="m0 200.300781h64v16h-64zm0 0"></path>
+                        <path d="m23.867188 305.371094 55.425781-31.996094 8 13.855469-55.429688 31.996093zm0 0"></path>
+                        <path d="m97.074219 384.441406 31.996093-55.425781 13.855469 7.996094-31.992187 55.429687zm0 0"></path>
+                        <path d="m200 352.300781h16v64h-16zm0 0"></path>
+                    </svg>
+                </div>
+                <p class="pt-2 font-bold text-gray-500">light bulbs</p>
+            </div>
+        
+            <div class="">
+                <div class="icon fill-blue-400 hover:fill-blue-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="65pt" viewBox="-31 0 480 480" width="65pt">
+                        <path d="m416.386719 351.59375-18.640625-28.242188c-14.363282-21.695312-33.546875-39.78125-56.046875-52.847656l-89.945313-51.855468c-.878906-1.738282-1.855468-3.421876-2.929687-5.046876v-104c-.039063-25.980468-6.078125-51.601562-17.644531-74.867187l-15.203126-30.320313c-1.355468-2.703124-4.125-4.414062-7.152343-4.414062-3.03125.00390625-5.796875 1.71875-7.148438 4.433594l-15.113281 30.300781c-11.640625 23.269531-17.714844 48.925781-17.738281 74.945313v103.921874c-1.070313 1.613282-2.042969 3.292969-2.917969 5.023438l-89.96875 51.886719c-22.472656 13.066406-41.632812 31.132812-56 52.800781l-18.640625 28.320312c-1.597656 2.449219-1.730469 5.578126-.34375 8.15625 1.386719 2.574219 4.066406 4.191407 6.992187 4.210938h.472657l33.785156-2c25.960937-1.605469 51.199219-9.195312 73.742187-22.167969l59.558594-34.398437-15.414062 174.566406h97.472656l-15.417969-174.574219 59.554688 34.398438c22.527343 12.972656 47.75 20.5625 73.695312 22.175781l33.847657 2h.464843c2.945313 0 5.652344-1.613281 7.046875-4.207031 1.394532-2.59375 1.253906-5.742188-.367187-8.199219zm-188.417969-85.992188c-4.558594 3.476563-9.984375 5.628907-15.6875 6.222657-1.371094.199219-2.757812.273437-4.144531.214843-1.023438-.027343-2.046875-.117187-3.0625-.261718l-.367188-.066406c-5.496093-.660157-10.710937-2.789063-15.097656-6.167969-8.097656-5.984375-12.847656-15.476563-12.785156-25.542969 0-4.277344.84375-8.511719 2.480469-12.464844 1.046874-2.378906 2.359374-4.636718 3.914062-6.71875 6.0625-8.039062 15.539062-12.78125 25.605469-12.816406 2.484375 0 4.957031.292969 7.371093.871094 7.273438 1.742187 13.71875 5.960937 18.230469 11.929687 1.539063 2.066407 2.84375 4.300781 3.878907 6.664063 1.667968 3.96875 2.523437 8.230468 2.519531 12.535156.058593 10.097656-4.722657 19.613281-12.855469 25.601562zm-43.144531-155.921874c.007812-23.53125 5.488281-46.738282 16-67.792969l8-16 8 16c10.480469 21.039062 15.957031 44.210937 16 67.714843v88.871094c-.375-.214844-.796875-.367187-1.160157-.578125-1.03125-.558593-2.070312-1.070312-3.132812-1.550781-.753906-.335938-1.496094-.671875-2.257812-.96875-1.121094-.4375-2.253907-.800781-3.40625-1.167969-.746094-.230469-1.472657-.480469-2.226563-.671875-1.285156-.328125-2.582031-.566406-3.894531-.800781-.648438-.109375-1.289063-.261719-1.945313-.351563-3.964843-.53125-7.984375-.53125-11.949219 0-.65625.089844-1.296874.242188-1.953124.351563-1.304688.21875-2.601563.457031-3.878907.800781-.800781.191406-1.503906.449219-2.25.671875-1.144531.359375-2.273437.730469-3.382812 1.160157-.800781.304687-1.527344.640624-2.28125.984374-1.046875.480469-2.078125.984376-3.09375 1.527344-.386719.21875-.800781.367188-1.1875.59375zm-76.886719 216.28125c-20.394531 11.730468-43.222656 18.59375-66.703125 20.054687l-17.839844 1.054687 9.863281-14.964843c13.003907-19.59375 30.347657-35.925781 50.679688-47.738281l76.886719-44.328126c0 .800782.105469 1.601563.144531 2.402344.058594 1.0625.066406 2.144532.183594 3.199219.050781.367187.144531.726563.195312 1.101563 1.71875 12.578124 8.433594 23.929687 18.621094 31.496093 1.554688 1.191407 3.1875 2.28125 4.882812 3.265625l-3.007812 1.742188-4.617188 2.65625zm132.152344 138.039062h-62.527344l14.863281-168.34375 13.425781-7.753906c.542969.042968 1.09375 0 1.644532 0 .554687 0 .882812.097656 1.328125.097656 1.019531 0 2.027343 0 2.976562-.089844l13.425781 7.746094zm136.265625-117.984375c-23.464844-1.464844-46.277344-8.328125-66.648438-20.0625l-69.28125-40-7.601562-4.402344c1.664062-.96875 3.265625-2.039062 4.800781-3.199219 10.242188-7.589843 16.984375-18.992187 18.703125-31.625.050781-.351562.144531-.6875.1875-1.03125.117187-1.054687.132813-2.144531.183594-3.199218.039062-.800782.144531-1.601563.144531-2.398438l76.871094 44.316406c20.355468 11.816407 37.703125 28.179688 50.6875 47.808594l9.847656 14.90625zm0 0"></path><path d="m224.824219 240c0 8.835938-7.160157 16-16 16-8.835938 0-16-7.164062-16-16s7.164062-16 16-16c8.839843 0 16 7.164062 16 16zm0 0"></path>
+                        <path d="m42.539062 272.121094c2.320313 0 4.53125-1.003906 6.054688-2.761719 1.519531-1.753906 2.203125-4.085937 1.871094-6.382813-1.089844-7.609374-1.640625-15.289062-1.640625-22.976562-.128907-64.816406 38.953125-123.273438 98.898437-147.921875 3.964844-1.757813 5.804688-6.355469 4.148438-10.363281-1.65625-4.007813-6.203125-5.96875-10.253906-4.417969-65.941407 27.105469-108.9375 91.40625-108.792969 162.703125.003906 8.449219.605469 16.890625 1.800781 25.257812.566406 3.933594 3.9375 6.859376 7.914062 6.863282zm0 0"></path><path d="m155.464844 390.886719c-16.546875-5.851563-32.015625-14.398438-45.78125-25.285157-3.472656-2.671874-8.445313-2.058593-11.160156 1.375-2.714844 3.4375-2.164063 8.417969 1.238281 11.175782 15.152343 11.988281 32.183593 21.386718 50.398437 27.824218 4.125 1.324219 8.550782-.867187 9.996094-4.949218 1.441406-4.085938-.625-8.574219-4.667969-10.132813zm0 0"></path><path d="m308.113281 365.480469c-13.765625 10.917969-29.238281 19.488281-45.800781 25.359375-2.726562.929687-4.742188 3.253906-5.277344 6.085937-.535156 2.828125.492188 5.730469 2.691406 7.589844 2.199219 1.863281 5.226563 2.398437 7.929688 1.40625 18.222656-6.460937 35.253906-15.886719 50.402344-27.898437 3.464844-2.742188 4.046875-7.777344 1.304687-11.238282-2.746093-3.464844-7.777343-4.050781-11.242187-1.304687zm0 0"></path><path d="m269.90625 92.0625c59.957031 24.644531 99.050781 83.113281 98.917969 147.9375.015625 7.6875-.519531 15.363281-1.597657 22.976562-.628906 4.375 2.40625 8.429688 6.777344 9.058594 4.375.628906 8.433594-2.40625 9.0625-6.777344 1.183594-8.367187 1.773438-16.808593 1.757813-25.257812.148437-71.304688-42.847657-135.613281-108.796875-162.71875-4.050782-1.550781-8.601563.410156-10.253906 4.417969-1.65625 4.007812.183593 8.605469 4.148437 10.363281zm0 0"></path>
+                    </svg>
+                </div>
+                <p class="pt-2 font-bold text-gray-500">Power Supplies</p>
+            </div>
+        </div>
+   
+    </div>
+
+
+
+    <div class="bg-blue-500 text-white w-52 -mb-[3rem] ml-[5rem] p-8">
+        <h3 class="font-bold text-[1.8rem] ">.About Us</h3>
+    </div>
+
+
+   <div class="bg-fixed bg-cover h-96  ml-[18rem] " style="background-image: url(./img/pexels-pixabay-159397.jpg)"></div>
+   
+    <div class="flex justify-end mr-8 mb-8">
+        <div class="bg-gray-50 w-96 p-8 -mt-[9rem]">
+            <h4 class="font-bold text-xl text-gray-600">The future of energy <Span class="text-gray-300">____</Span></h4>
+            <p class="pt-3 text-gray-500 font-medium">
+                We are Nyika Solar Technologies; we focus on manufacturing and selling of solar water heaters, Solar lighting and Solar Power supply.
+            </p>
+        </div>
+    </div>
+    
+    <div class="bg-gray-900 mt-5 text-white pt-8">
+        <div class="columns-3 px-5">
+            <div class="w-full aspect-video">
+              <img class="h-[80%] w-auto" src="./img/nyika-logo.png" alt="Workflow">
+            </div>
+            <div class="w-full aspect-video">
+                <h3 class="font-bold">Company links</h3>
+                <ul class="pt-2">
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html#team">Team</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="w-full aspect-video">
+              <ul>
+                <li>NYIKA SOLAR TECHNOLOGIES LIMITED</li>
+                <li>P.O. BOX 31288,</li>
+                <li>CAPITAL CITY,</li>
+                <li>LILONGWE-3, REPUBLIC OF MALAWI</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <p class="text-gray-400">&copy; 2022 Nyika Solar Technologies Limited</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

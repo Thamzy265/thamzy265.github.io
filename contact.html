@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+    
+    <nav class="bg-white">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
+              <div class="flex-shrink-0 flex items-center">
+                <a href="index.html">
+                    <img class="block lg:hidden h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
+                  <img class="hidden lg:block h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
+                </a>
+                
+              </div>
+              <div class="hidden sm:block sm:ml-6 mt-5">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="about.html" class="bg-gray-300 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">About</a>
+      
+                  <a href="about.html#team" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+      
+                  <a href="#" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products </a>
+      
+                  <a href="contact.html" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+      
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="bg-cover bg-center" style="background-image: url(./img/pexels-pixabay-159397.jpg)">
+        <div class="bg-gradient-to-r from-blue-500 flex items-center h-80">
+            <div class="max-w-7xl px-2 sm:px-6 md:px-[5rem] lg:px-8 text-white ">
+                <h3 class="font-bold text-[2.5rem]">Contact Us</h3>
+                <div class="gap-1 columns-2">
+                    <div class="border-t-4 border-blue-400 w-35"></div>
+                    <div class="border-t-4 border-gray-500 w-8"></div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-8 pb-8">
+        <div class="grid grid-cols-3 gap-1 pt-14">
+            <div class="bg-blue-500 text-white p-8 w-96">
+                <h3 class="font-bold text-[2rem]">Our Details</h3>
+                <ul class="py-3">
+                    <li>Nyika Solar Technologies Limited</li>
+                    <li>P.O. Box 31288,</li>
+                    <li>Capital City,</li>
+                    <li>Lilongwe-3, Republic Of Malawi.</li>
+                </ul>
+                
+               <p><a href = "tel:+265993404090">+ (265) 993-404-090</a></p>
+                <p><a href = "tel:+265885580930">+ (265) 885-580-930</a></p>
+                <p class="pt-2"><a href = "mailto: chakanda@yahoo.com">chakanda@yahoo.com</a></p>
+            </div>
+            <div class="col-span-2 mr-20 p-4">
+                <form action="" >
+                    <h3 class="font-bold text-[1.8rem] text-center mb-5"><span class="text-blue-500">.</span>Get in <span class="text-blue-500">Touch</span></h3>
+                    <div class="grid grid-cols-2 gap-4">
+                    <label class="block">
+                        <input type="text" class="
+                            mt-0
+                            block
+                            w-full
+                            px-0.5
+                            border-0 border-b-2 border-gray-200
+                            focus:ring-0 focus:border-blue-300
+                          " placeholder="Name">
+                      </label>
+                      <label class="block">
+                        <input type="text" class="
+                            mt-0
+                            block
+                            w-full
+                            px-0.5
+                            border-0 border-b-2 border-gray-200
+                            focus:ring-0 focus:border-blue-300
+                        " placeholder="Subject">
+                     </label>
+                     <label class="block">
+                        <input type="text" class="
+                            mt-0
+                            block
+                            w-full
+                            px-0.5
+                            border-0 border-b-2 border-gray-200
+                            focus:ring-0 focus:border-blue-300
+                          " placeholder="Phone">
+                      </label>
+                      <label class="block">
+                        <input type="text" class="
+                            mt-0
+                            block
+                            w-full
+                            px-0.5
+                            border-0 border-b-2 border-gray-200
+                            focus:ring-0 focus:border-blue-300
+                        " placeholder="Email">
+                     </label>
+                     <label class="block col-span-2">
+                        <span class="text-gray-500">Comment</span>
+                        <textarea class="
+                            mt-0
+                            block
+                            w-full
+                            px-0.5
+                            border-0 border-b-2 border-gray-200
+                            focus:ring-0 focus:border-blue-300
+                            
+                          " rows="2"></textarea>
+                      </label>
+                    </div>
+                      <button class="bg-blue-400 px-14 py-2 text-white mt-5 hover:bg-blue-600">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-gray-900 mt-5 text-white pt-8">
+        <div class="columns-3 px-5">
+            <div class="w-full aspect-video">
+              <img class="h-[80%] w-auto" src="./img/nyika-logo.png" alt="Workflow">
+            </div>
+            <div class="w-full aspect-video">
+                <h3 class="font-bold">Company links</h3>
+                <ul class="pt-2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html#team">Team</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="w-full aspect-video">
+              <ul>
+                <li>NYIKA SOLAR TECHNOLOGIES LIMITED</li>
+                <li>P.O. BOX 31288,</li>
+                <li>CAPITAL CITY,</li>
+                <li>LILONGWE-3, REPUBLIC OF MALAWI</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <p class="text-gray-400">&copy; 2022 Nyika Solar Technologies Limited</p>
+        </div>
+    </div>
+
+    </body>
+</html>

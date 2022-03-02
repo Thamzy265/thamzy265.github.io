@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+  <nav class="bg-white">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="index.html">
+                <img class="block lg:hidden h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
+              <img class="hidden lg:block h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
+            </a>
+            
+          </div>
+          <div class="hidden sm:block sm:ml-6 mt-5">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="about.html" class="bg-gray-300 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">About</a>
+  
+              <a href="about.html#team" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+  
+              <a href="#" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products </a>
+  
+              <a href="contact.html" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+  
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+  
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+  
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="bg-cover bg-center h-80 flex items-center" style="background-image: url(./img/pexels-pixabay-371917.jpg)">
+        <div class="max-w-7xl px-2 sm:px-6 md:px-[5rem] lg:px-8 text-white ">
+                <h3 class="font-bold text-[2.5rem]">About Us</h3>
+                <div class="gap-1 columns-2">
+                    <div class="border-t-4 border-blue-400 w-35"></div>
+                    <div class="border-t-4 border-gray-500 w-8"></div>
+                </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-[15%] bg-gray-50">
+        <div class="flex justify-around">
+            <div class="w-80">
+                <div class="bg-blue-500 flex justify-center items-center flex-col h-80 p-8 shadow-md">
+                    <div class="w-48">
+                        <small class="text-gray-600">ABOUT</small>
+                        <h3 class="font-bold text-white text-[2rem]">Welcome to NST Company</h3>
+                    </div>
+                    
+                </div>
+                <div class="flex justify-end -mt-20 -mr-14 h-[25%] w-auto">
+                        <img class="bg-gray-50" src="./img/nyika-logo.png" alt="Workflow">
+                </div>
+            </div>
+            <div class="w-96 py-8">
+                <h3 class="font-bold text-[1.5rem] pb-4">We provide future of energy</h3>
+                <p class="font-medium text-gray-600">We are Nyika Solar Technologies; we focus on manufacturing and selling of solar water heaters, Solar lighting and Solar Power supply.</p> </br>
+                <p class="font-medium text-gray-600">It is NST’s intention to see that there is universal access to sustainable, reliable, and renewable energy in Malawi and Southern/Eastern Africa.</p> </br>  
+                <p class="font-medium text-gray-600"> Our headquarters are in Lilongwe, Republic of Malawi.</p>   
+                
+            </div>
+        </div>
+    </div>
+    <div id="team" class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-8 pb-8">
+        <div class="text-center">
+            <small class="text-blue-500 font-medium">Our crew</small>
+            <div class="font-medium text-[2rem] mb-5">
+                <span class="text-blue-500">.</span>
+                Meet the
+                <span class="text-blue-500">Team</span>
+            </div>
+            <p class="w-96 m-auto text-gray-600">Streamer fish California halibut Pacific saury. Slickhead grunion lake trout. Canthigaster rostrata spikefish brown trout loach</p>
+        </div>
+        <div class="grid grid-cols-4 gap-4 pt-14">
+          <div class="">
+              <img src="./img/pexels-daniel-xavier-1239291.jpg" >
+              <div class="flex justify-end">
+                <div class="p-4 bg-blue-400 -mt-8">
+                  <div class="text-gray-100 font-medium">
+                    David Gondwe 
+                  </div>
+                  <small class="text-slate-300">
+                    CEO
+                  </small>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="">
+            <img src="./img/pexels-justin-shaifer-1222271.jpg" >
+            <div class="flex justify-end">
+              <div class="p-4 bg-blue-400 -mt-8">
+                <div class="text-gray-100 font-medium">
+                  Tanangachi Manda  
+                </div>
+                <small class="text-blue-400">
+                  CEO
+                </small>
+              </div>
+            </div>
+        </div>
+        
+          <div class="">
+            <img src="./img/pexels-daniel-xavier-1239291.jpg" >
+            <div class="flex justify-end">
+              <div class="p-4 bg-blue-400 -mt-8">
+                <div class="text-gray-100 font-medium">
+                  Abishai Mphande  
+                </div>
+                <small class="text-blue-400">
+                  CEO
+                </small>
+              </div>
+            </div>
+            
+        </div>
+
+          <div class="">
+            <img src="./img/pexels-justin-shaifer-1222271.jpg" >
+            <div class="flex justify-end">
+              <div class="p-4 bg-blue-400 -mt-8">
+                <div class="text-gray-100 font-medium">
+                  Joshua Banda 
+                </div>
+                <small class="text-blue-400">
+                  CEO
+                </small>
+              </div>
+            </div>
+        </div>
+
+        <div class="">
+          <img src="./img/pexels-simon-robben-614810.jpg" >
+          <div class="flex justify-end">
+            <div class="p-4 bg-blue-400 -mt-8">
+              <div class="text-gray-100 font-medium">
+                Sekari Nhari  
+              </div>
+              <small class="text-slate-300">
+                Production Manager
+              </small>
+            </div>
+          </div>
+       </div>
+
+        </div>
+    </div>
+
+
+    <div class="bg-gray-900 mt-5 text-white pt-8">
+      <div class="columns-3 px-5">
+          <div class="w-full aspect-video">
+            <img class="h-[80%] w-auto" src="./img/nyika-logo.png" alt="Workflow">
+          </div>
+          <div class="w-full aspect-video">
+              <h3 class="font-bold">Company links</h3>
+              <ul class="pt-2">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="about.html#team">Team</a></li>
+                  <li><a href="">Products</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="w-full aspect-video">
+            <ul>
+              <li>NYIKA SOLAR TECHNOLOGIES LIMITED</li>
+              <li>P.O. BOX 31288,</li>
+              <li>CAPITAL CITY,</li>
+              <li>LILONGWE-3, REPUBLIC OF MALAWI</li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="text-center mt-8">
+          <p class="text-gray-400">&copy; 2022 Nyika Solar Technologies Limited</p>
+      </div>
+  </div>
+</body>
+</html>
