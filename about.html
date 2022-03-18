@@ -9,12 +9,12 @@
 </head>
 <body>
     
-  <nav class="bg-white">
+  <nav class="bg-white py-4">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <button onclick="myFunction()" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <!--
               Icon when menu is closed.
@@ -40,20 +40,20 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
           <div class="flex-shrink-0 flex items-center">
-            <a href="index.html">
+            <a href="">
                 <img class="block lg:hidden h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
-              <img class="hidden lg:block h-20 w-auto" src="./img/nyika-logo.png" alt="Workflow">
+                <img class="hidden lg:block h-[8.5rem] w-auto" src="./img/nyika-logo.png" alt="Workflow">
             </a>
             
           </div>
-          <div class="hidden sm:block sm:ml-6 mt-5">
-            <div class="flex space-x-4">
+          <div class="hidden sm:block sm:ml-6 mt-12">
+            <div class="flex space-x-4 ">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="about.html" class="bg-gray-300 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">About</a>
   
               <a href="about.html#team" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
   
-              <a href="#" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products </a>
+              <a href="product.html" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Products </a>
   
               <a href="contact.html" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
             </div>
@@ -64,27 +64,33 @@
     </div>
   
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
+    <div class="hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+        <a href="index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
   
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+        <a href="about.html#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About us</a>
+
+        <a href="about.html#team" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
   
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="product.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Products</a>
   
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+        <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact us</a>
       </div>
     </div>
   </nav>
 
-    <div class="bg-cover bg-center h-80 flex items-center" style="background-image: url(./img/pexels-pixabay-371917.jpg)">
-        <div class="max-w-7xl px-2 sm:px-6 md:px-[5rem] lg:px-8 text-white ">
+    <div class="bg-cover bg-center" style="background-image: url(./img/nyika-heater.jpg)">
+        <div class="bg-gradient-to-r from-blue-300 h-96 flex items-center">
+          <div class="max-w-7xl md:mx-40 px-8 md:px-2 sm:px-6 md:px-[5rem] lg:px-8 text-white">
+              <div class="md:w-96 ">
                 <h3 class="font-bold text-[2.5rem]">About Us</h3>
                 <div class="gap-1 columns-2">
                     <div class="border-t-4 border-blue-400 w-35"></div>
                     <div class="border-t-4 border-gray-500 w-8"></div>
                 </div>
+          </div>
+          </div>
         </div>
     </div>
 
@@ -107,7 +113,10 @@
                 <p class="font-medium text-gray-600">We are Nyika Solar Technologies; we focus on manufacturing and selling of solar water heaters, Solar lighting and Solar Power supply.</p> </br>
                 <p class="font-medium text-gray-600">It is NST’s intention to see that there is universal access to sustainable, reliable, and renewable energy in Malawi and Southern/Eastern Africa.</p> </br>  
                 <p>The business currently exists as a consolidated plan comprising of technocrats in Engineering and Solar technologies with cumulative years of experience of over 50 years working in developed countries such as United Kingdom, United States of America, Canada, and developing countries such as South Africa. The consortium has the support of Solar Dynamics Limited from Barbados as a strategic partner to offer proprietary technologies in the manufacturing of solar water heater products in Malawi. The company will primarily manufacture solar water heaters with a 60 degrees Centigrade temperature guarantee on a 24/7 basis as a unique feature. Other products to be produced include solar lights and solar power supplies. The target market includes households and corporate institutions with a bigger market share within the tourism and education sector offering solutions to lodges, hotels, hospitals/clinics, boarding schools and Universities. The project's factory site has been duly identified in Lilongwe, Malawi, and currently awaiting financial resources to commence factory set up. The company is duly registered with the Registrar of companies in Malawi and it possesses a duly executed Memorandum of Understanding and a 10-Year Technology Transfer Agreement with Solar Dynamics Limited</p>
-                <p class="font-medium text-gray-600 pt-3">(location icon) Our headquarters are in Lilongwe, Republic of Malawi.</p>   
+                <div class="flex mt-5">
+                  <img class="h-8" src="img/location-icon-png-4236.png" alt="" srcset="">
+                  <p class="font-medium text-gray-600 pt-3 pl-2"> Our headquarters are in Lilongwe, Republic of Malawi.</p>
+                </div>   
                 
             </div>
         </div>
@@ -149,7 +158,7 @@
         </div>
         <div class="grid md:grid-cols-4 gap-6 md:gap-4 pt-14">
           <div class="">
-              <img src="./img/pexels-daniel-xavier-1239291.jpg" >
+              <img src="./img/CEO2.jpg" >
               <div class="flex justify-end">
                 <div class="p-4 bg-blue-400 -mt-8">
                   <div class="text-gray-100 font-medium">
@@ -164,7 +173,9 @@
           </div>
 
           <div class="">
-            <img src="./img/pexels-justin-shaifer-1222271.jpg" >
+            <div class="bg-gray-200 h-72 w-auto shadow">
+              <img src="img/nyika-logo.png" alt="" srcset="">
+            </div>
             <div class="flex justify-end">
               <div class="p-4 bg-blue-400 -mt-8">
                 <div class="text-gray-100 font-medium">
@@ -178,7 +189,9 @@
         </div>
         
           <div class="">
-            <img src="./img/pexels-daniel-xavier-1239291.jpg" >
+            <div class="bg-gray-200 h-72 w-auto shadow">
+              <img src="img/nyika-logo.png" alt="" srcset="">
+            </div>
             <div class="flex justify-end">
               <div class="p-4 bg-blue-400 -mt-8">
                 <div class="text-gray-100 font-medium">
@@ -193,7 +206,9 @@
         </div>
 
           <div class="">
-            <img src="./img/pexels-justin-shaifer-1222271.jpg" >
+            <div class="bg-gray-200 h-72 w-auto shadow">
+              <img src="img/nyika-logo.png" alt="" srcset="">
+            </div>
             <div class="flex justify-end">
               <div class="p-4 bg-blue-400 -mt-8">
                 <div class="text-gray-100 font-medium">
@@ -207,7 +222,9 @@
         </div>
 
         <div class="">
-          <img src="./img/pexels-simon-robben-614810.jpg" >
+          <div class="bg-gray-200 h-72 w-auto shadow">
+            <img src="img/nyika-logo.png" alt="" srcset="">
+          </div>
           <div class="flex justify-end">
             <div class="p-4 bg-blue-400 -mt-8">
               <div class="text-gray-100 font-medium">
@@ -224,23 +241,25 @@
     </div>
 
 
-    <div class="bg-gray-900 mt-5 text-white pt-8">
-      <div class="columns-3 px-5">
+    <div class="bg-gray-900 text-white pt-8 px-8 pb-8">
+
+      <div class="md:columns-3 px-5">
           <div class="w-full aspect-video">
             <img class="h-[80%] w-auto" src="./img/nyika-logo.png" alt="Workflow">
           </div>
           <div class="w-full aspect-video">
-              <h3 class="font-bold">Company links</h3>
-              <ul class="pt-2">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="about.html#team">Team</a></li>
-                  <li><a href="">Products</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+              <h3 class="font-bold text-xl">Company links</h3>
+              <ul class="pt-3">
+                  <li><a href="">Home</a></li>
+                  <li class="pt-3"><a href="about.html">About Us</a></li>
+                  <li class="pt-3"><a href="about.html#team">Team</a></li>
+                  <li class="pt-3"><a href="product.html">Products</a></li>
+                  <li class="pt-3"><a href="contact.html">Contact Us</a></li>
               </ul>
           </div>
-          <div class="w-full aspect-video">
-            <ul>
+          <div class="w-full aspect-video mt-20 md:mt-0">
+            <h3 class="font-bold text-xl">Our Address</h3>
+            <ul class="pt-3">
               <li>NYIKA SOLAR TECHNOLOGIES LIMITED</li>
               <li>P.O. BOX 31288,</li>
               <li>CAPITAL CITY,</li>
@@ -250,9 +269,23 @@
       </div>
 
       <div class="text-center mt-8">
-
           <p class="text-gray-400">&copy; 2022 Nyika Solar Technologies Limited</p>
       </div>
   </div>
 </body>
+<script>
+var isToggled = true;
+function myFunction() {
+  var element = document.getElementById("mobile-menu");
+  
+  if(isToggled){
+    element.classList.remove("hidden");
+    isToggled = false;
+  }else{
+    isToggled = true;
+    element.classList.add("hidden");
+  }
+  
+}
+</script>
 </html>
