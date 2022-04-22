@@ -40,8 +40,8 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
           <div class="flex-shrink-0 flex items-center">
-            <a href="">
-                Africa Fast F
+            <a href="" class="font-bold">
+                Africa Fast Ferry
             </a>
             
           </div>
@@ -57,8 +57,8 @@
               <a href="contact.html" class="text-gray-600 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
             </div>
           </div>
-          <div>
-              <a href="" class="bg-orange-600 text-white py-2 px-4">My Account</a>
+          <div class="hidden sm:block sm:ml-6">
+              <a href="booking.html" class="bg-orange-600 text-white py-2 px-4">My Account</a>
           </div>
         </div>
         
@@ -69,7 +69,7 @@
     <div class="hidden" id="mobile-menu">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+        <a href="index.html" class="bg-blue-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
   
         <a href="about.html#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About us</a>
 
@@ -78,6 +78,10 @@
         <a href="passenger.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Part ships</a>
   
         <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact us</a>
+
+        <div class="">
+          <a href="booking.html" class="bg-orange-600 text-white py-2 px-4">My Account</a>
+      </div>
       </div>
     </div>
   </nav>
@@ -98,7 +102,7 @@
 
       <div>
         <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-20">
-            <div class="w-[50vw] m-auto">
+            <div class="md:w-[50vw] m-auto">
                 <div class="text-center">
                     <h3 class="font-bold text-xl">WHY CHOOSE OUR CARGO FERRY</h3>
                     <P class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique doloremque in officia! Laborum dignissimos pariatur blanditiis, tempore enim, magnam amet minima temporibus accusantium natus dolores molestiae nostrum assumenda! Neque, recusandae!</P>    
@@ -109,7 +113,7 @@
       </div>
 
       <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-20">
-        <div class="grid grid-cols-2 gap-16">
+        <div class="grid md:grid-cols-2 gap-4 md:gap-16">
             <div class="bg-indigo-300 shadow-md">
                 <img src="./img/pexels-arefin-shamsul-879479.jpg" alt="" srcset="">
                 <div class="p-4">
@@ -145,11 +149,11 @@ regions of Malawi and some parts of Mozambique as primary customers.
            
       </div>
 
-      <footer class="h-80 bg-gray-200">
-        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-20">
+      <footer class="h-92 md:h-80 bg-gray-200">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 md:mt-20">
           <div class="pt-5">
 
-            <div class="grid grid-cols-3 px-5">
+            <div class="grid md:grid-cols-3 px-5">
               <div class="">
                 <ul class="pt-3">
                   <li class="font-semibold">Africa Fast Ferry</li>
@@ -157,25 +161,40 @@ regions of Malawi and some parts of Mozambique as primary customers.
                   <li>Malawi.</li>
                 </ul>
               </div>
-                <div class="">
+                <div class="mt-5 md:mt-0">
                     <ul class="">
                         <li><a href="">Home</a></li>
                         <li class="pt-3"><a href="about.html">About Us</a></li>
-                        <li class="pt-3"><a href="about.html#team">Cargo</a></li>
+                        <li class="pt-3"><a href="cargo.html">Cargo</a></li>
                         <li class="pt-3"><a href="product.html">Passenger</a></li>
                         <li class="pt-3"><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-                <p class="text-gray-500">
+                <p class="text-gray-500 mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quis aperiam veniam? Recusandae hic esse ipsam magnam perspiciatis quae! Dolorem, quisquam corporis in a explicabo eius debitis iure ab rerum.
                 </p>
             </div>
       
-            <div class="">
+            <div class="mt-4 text-center md:text-left">
                 <p class="text-gray-600">&copy; 2022 Africa Fast Ferry.</p>
             </div>
         </div>
         </div>
       </footer>
+      <script>
+        var isToggled = true;
+        function myFunction() {
+          var element = document.getElementById("mobile-menu");
+          
+          if(isToggled){
+            element.classList.remove("hidden");
+            isToggled = false;
+          }else{
+            isToggled = true;
+            element.classList.add("hidden");
+          }
+          
+        }
+        </script>
 </body>
 </html> 
